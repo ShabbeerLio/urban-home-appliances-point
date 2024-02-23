@@ -14,7 +14,7 @@
 /* animated button */
 .navbar-toggler{
     width: 30px;
-    height: 22px;
+    height: 20px;
     position: relative;
     transition: .5s ease-in-out;
 }
@@ -36,9 +36,9 @@
 .toggler-icon {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
-    background: #b8b8b8;
+    background: #6e6e6e;
     border-radius: 1px;
     opacity: 1;
     left: 0;
@@ -66,7 +66,7 @@
 }
 
 .navbar-toggler.collapsed .top-bar{
-    margin-top: -20px;
+    margin-top: -18px;
     transform: rotate(0deg);
 }
 
@@ -76,7 +76,7 @@
 }
 
 .navbar-toggler.collapsed .bottom-bar{
-    margin-top: 20px;
+    margin-top: 18px;
     transform: rotate(0deg);
 }
 
