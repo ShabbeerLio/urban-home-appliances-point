@@ -1,0 +1,214 @@
+.contact {
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+.contact-main,
+.contact-body {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-left {
+    width: 60%;
+}
+
+.contact-left h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 38px;
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 23px;
+    font-weight: bold;
+}
+
+.contact-left p {
+    padding-bottom: 10px;
+    margin: 0 0 0px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #70778a;
+}
+
+.contact-caller-button a {
+    /* color: black; */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-caller-button {
+    background-color: #2076BA;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.contact-caller-button a svg {
+    /* background-color: rgb(8, 204, 1); */
+    font-size: 62px;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.contact-caller-button-number {
+    padding-left: 10px;
+}
+
+.contact-caller-button-number p,
+.contact-caller-button-number h4 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-caller-button-number h4 {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-button p {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 10px;
+    background-color: #2076BA;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-button p:hover {
+    background-color: #003d61;
+}
+
+.contact-right {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #2076BA;
+    padding: 2rem;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contact-right h3 {
+    color: white;
+}
+
+.contact-right button {
+    width: 100%;
+    background-color: #ffff21;
+    color: black
+}
+
+.contact-right button:hover {
+    background-color: #d1d100;
+}
+
+.contact-body-left {
+    width: 35%;
+}
+
+.contact-body-right {
+    width: 65%;
+}
+
+.contact-body {
+    padding-top: 50px;
+}
+
+.contact-body-left img {
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+@media (min-width: 1200px) {
+
+    .contact-main,
+    .contact-body {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .contact-button p {
+        width: 50%;
+    }
+
+    .contact-main,
+    .contact-body {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    .contact-main,
+    .contact-body {
+        display: block;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding-bottom: 30px;
+        padding: 0px 15px;
+    }
+
+    .contact-body {
+        width: 100%;
+        padding: 20px 15px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .contact-body-left,
+    .contact-body-right {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .contact-body-right p {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-main,
+    .contact-body {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .contact-button p {
+        width: 100%;
+    }
+
+    .contact-right {
+        width: 100%;
+        background-color: #2076BA;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .contact-caller-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

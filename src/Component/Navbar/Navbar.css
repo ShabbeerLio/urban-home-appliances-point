@@ -1,0 +1,260 @@
+.navBar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    padding: 0;
+}
+
+/* animated button */
+.navbar-toggler{
+    width: 30px;
+    height: 22px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus
+{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #b8b8b8;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar{
+    margin-top: 0px;
+}
+
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+
+.call-number-responsive {
+    display: none;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+
+.nav-menu {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navBar-logo img {
+    padding: 5px;
+    margin-bottom: 0;
+    max-height: 80px;
+}
+
+.nav-menu ul li {
+    margin: 0px 10px ;
+    position: relative;
+}
+
+.nav-menu ul li a {
+    padding: 10px 0px !important;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(51, 51, 51) !important;
+    text-transform: capitalize;
+}
+
+.call-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-number p {
+    text-decoration: none;
+    margin: 0;
+    color: #2076BA;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.call-number p a {
+    text-decoration: none;
+    margin: 0;
+    color: #2076BA;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.call-number svg {
+    margin: 0;
+    color: #2076BA;
+    font-size: 38px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.floatbar{
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+}
+
+.floatbar-icon{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2076BA;
+    margin-bottom: 8px;
+}
+.floatbar-icon:hover{
+   background-color:#013e61 ;
+}
+.floatbar-icon svg{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+.floatbar-icon:first-child{
+    background-color: green;
+}
+.floatbar-icon:first-child:hover{
+    background-color: rgb(0, 75, 0);
+}
+.floatbar-icon:last-child:hover{
+    background-color: rgb(201, 181, 0);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .nav-menu {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu.mega-menu::before {
+        content: "";
+        border-bottom: 13px solid white;
+        border-left: 11px solid rgba(0, 0, 0, 0);
+        border-right: 11px solid rgba(0, 0, 0, 0);
+        right: initial;
+        display: inline-block;
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        margin-left: 0;
+        transform: translate(-50%);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .call-number {
+        display: none !important;
+    }
+
+    .call-number-responsive {
+        display: inline-flex !important;
+        color: #2076BA;
+        padding-top: 15px;
+    }
+
+    .call-number-responsive p {
+        padding-left: 10px;
+    }
+
+    .call-number-responsive p a {
+        text-decoration: none;
+        padding-left: 10px;
+        padding: 10px 0px !important;
+        font-size: 17px;
+        font-weight: 400;
+        color: #2076BA !important;
+        text-transform: capitalize;
+    }
+
+    .call-number-responsive svg {
+        display: flex;
+        align-items: center;
+        color: #2076BA;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .nav-menu ul li {
+    margin: 0px 10px ;
+    position: relative;
+    border-bottom: 1px solid #bbb;
+}
+    
+}
+
+@media only screen and (max-width: 720px) {
+    .floatbar{
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+    
+}
