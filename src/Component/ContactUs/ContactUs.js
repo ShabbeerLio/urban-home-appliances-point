@@ -58,7 +58,7 @@ const ContactUs = (props) => {
       <div className="contact">
         <div className="contact-main">
           <div className="contact-left">
-            <h2>Are you locked out of your home or car? </h2>
+            <h2>Contact us for enquiries, repairs, and customer support assistance. </h2>
             <p>Welcome to Urban Home Appliances Point's! We're thrilled to connect with you and assist in any way possible. At Urban Home Appliances Point, we're committed to providing top-notch service and quality products to enhance your home living experience.</p>
             <p>Whether you have questions about our latest appliances, need assistance with an order, or simply want to share feedback, we're here to listen and respond promptly.</p>
           <div className="contact-caller-button">
